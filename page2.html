@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Let's Go</title>
-   <link rel="icon" type="image/png" href="/images/logo5.png">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
@@ -17,7 +17,87 @@
     </div>
         <h4 style="text-align: center; font-size:25px;">Passanger details</h4>
         <div id="input_details">
+            <div class=form_display>
+                <form id="form" action="page3.html" class="passanger_detains">
+                    <div class="input_data">
+                    <label for="fname" class="firstname">First Name</label>
+                    <input type="text" id="fname">
+                    </div>
 
+                    <div class="input_data">
+                        <label for="lname" class="lastname">Last Name</label>
+                        <input type="text"  id="lname">
+                    </div>
+
+                    <div class="input_data">
+                        <label for="Age" class="age">Age</label>
+                        <input type="text" id="Age">
+                    </div>
+
+                    <div class="input_data">
+                    <label class="gender">Gender</label>
+                    <select id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+
+                    </div>
+
+                    <div class="input_data">
+                        
+                        <label for="mail" class="email">Email</label>
+                        <input type="email" id="mail">
+
+                    </div>
+                    <div class="input_data">
+                        <label for="contact" class="phone">Phone Number</label>
+                        <input type="text" id="contact">
+                    
+                    </div>
+
+
+
+                    <div class="input_data">
+                        <input type="submit" value="Confirm" id="button">
+                    </div>
+                    <div class="input_data">
+                        <input type="button" value="Add Passenger" class="button1" onclick="add_pass()">
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+        <div id="add_passanger" style="display: none; margin-bottom: 10%;">
+            <h4 style="text-align: center; font-size:25px;">Passanger details</h4>
+            <form id="form2" action="page3.html" class="passanger_detains2" >
+                <div class="input_data">
+                <label for="fname2" class="firstname">First Name</label>
+                <input type="text" id="fname2">
+                </div>
+
+                <div class="input_data">
+                    <label for="lname2" class="lastname">Last Name</label>
+                    <input type="text"  id="lname2">
+                </div>
+
+                <div class="input_data">
+                    <label for="Age2" class="age">Age</label>
+                    <input type="text" id="Age2">
+                </div>
+
+                <div class="input_data">
+                <label class="gender2">Gender</label>
+                <select id="gender2">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+
+                </div>
+
+                <div class="input_data">
+                <input type="submit" value="Confirm" class="button1" onclick="store_item2()">
+                </div>
+            </form>
         </div>
     </section>
 

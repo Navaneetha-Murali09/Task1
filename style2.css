@@ -9,9 +9,11 @@ font-family: 'Poiret One', cursive;
 font-family: 'Tajawal', sans-serif;
 background-color: whitesmoke;
 background-image: url("images/plane7.jpeg");
-background-position: center;
+
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+
 }
 
 
@@ -89,15 +91,29 @@ select{
     border-radius: 3px;
 }
 
-#button{
+.button1{
     color: #d5dbd9;
-    background-color: rgb(79, 108, 145);
+    background-color: rgb(255, 102, 0);;
     border-radius: 7px;
 }
 
-#button:hover{
+.button1:hover{
     background-color: #d5dbd9;
-    color: rgb(79, 108, 145);
+    color: rgb(255, 102, 0);
 }
 
+#add_passanger{
+    max-width: 500px;
+    width: 100%;
+    height: 35vh;
+    background: #fff;
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-top: 15%;
+    margin-left: -5.5%;
+    margin-bottom: 10%;
+    padding-bottom: 5%;
+}
 

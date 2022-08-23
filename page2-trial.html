@@ -13,211 +13,126 @@
         <div class="ticket-main-body">
             <h2>Passanger details</h2>
             <div class="passanger_details" id="passanger_details">
+                <form action="page3.html" id="form" class="passanger_detains">
                 
+                    <div class="container1">
+                            <!--<h3 class="sub_heading">Passenger Name</h3>-->
+                            <div class="input_data">
+                            <label for="fname" class="firstname">First Name</label>
+                            <input type="text" id="fname">
+                        </div>
+    
+                        <div class="input_data">
+                            <label for="lname" class="lastname">Last Name</label>
+                            <input type="text"  id="lname">
+                        </div>
+                    </div>
+    
+                    <div class="container2">
+                        <div class="input_data">
+                            <label for="Age" class="age">Age</label>
+                            <input type="text" id="Age">
+                        </div>
+    
+                        <div class="input_data">
+                        <label class="gender">Gender</label>
+                        <select id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+    
+                        </div>
+                    </div>
+    
+                    <!--<h3 class="sub_heading">Contact Details</h3>
+                    <br>-->
+                    <div class="container3">
+                        <div class="input_data">
+                            
+                            <label for="mail" class="email">Email</label>
+                            <input type="email" id="mail">
+    
+                        </div>
+                        <div class="input_data">
+                            <label for="contact" class="phone">Phone Number</label>
+                            <input type="text" id="contact">
+                        
+                        </div>
+                    </div>
+    
+                    <div class="container4">
+                        <div class="input_data">
+                        <input type="submit" value="Confirm" id="button" onclick="page3.html">
+                        <input type="submit" value="Add Passanger" class="button2" onclick="add_pass()">
+                        </div>
+                    </div>
+                    </form>
+            </div>
+
+            <div class="add_passanger">
+                <form action="page3.html" id="form2" class="passanger_detains" style="display: none;">
+                
+                    <div class="container1">
+                            <!--<h3 class="sub_heading">Passenger Name</h3>-->
+                            <div class="input_data">
+                            <label for="fname" class="firstname">First Name</label>
+                            <input type="text" id="fname">
+                        </div>
+    
+                        <div class="input_data">
+                            <label for="lname" class="lastname">Last Name</label>
+                            <input type="text"  id="lname">
+                        </div>
+                    </div>
+    
+                    <div class="container2">
+                        <div class="input_data">
+                            <label for="Age" class="age">Age</label>
+                            <input type="text" id="Age">
+                        </div>
+    
+                        <div class="input_data">
+                        <label class="gender">Gender</label>
+                        <select id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+    
+                        </div>
+                    </div>
+    
+                    <!--<h3 class="sub_heading">Contact Details</h3>
+                    <br>-->
+                    <div class="container3">
+                        <div class="input_data">
+                            
+                            <label for="mail" class="email">Email</label>
+                            <input type="email" id="mail">
+    
+                        </div>
+                        <div class="input_data">
+                            <label for="contact" class="phone">Phone Number</label>
+                            <input type="text" id="contact">
+                        
+                        </div>
+                    </div>
+    
+                    <div class="container4">
+                        <div class="input_data">
+                        <input type="submit" value="Confirm" id="button">
+                        <input type="submit" value="Add Passanger" id="button">
+                        </div>
+                    </div>
+                    </form>
             </div>
         </div>
     </center>
     <script>
-        function passanger_det(){
-                let pass_details='';
-                pass_details +=  `
-                <form action="page3.html" id="form" class="passanger_detains">
-                
-                <div class="container1">
-                        <!--<h3 class="sub_heading">Passenger Name</h3>-->
-                        <div class="input_data">
-                        <label for="fname" class="firstname">First Name</label>
-                        <input type="text" id="fname">
-                    </div>
-
-                    <div class="input_data">
-                        <label for="lname" class="lastname">Last Name</label>
-                        <input type="text"  id="lname">
-                    </div>
-                </div>
-
-                <div class="container2">
-                    <div class="input_data">
-                        <label for="Age" class="age">Age</label>
-                        <input type="text" id="Age">
-                    </div>
-
-                    <div class="input_data">
-                    <label class="gender">Gender</label>
-                    <select id="gender">
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                    </select>
-
-                    </div>
-                </div>
-
-                <!--<h3 class="sub_heading">Contact Details</h3>
-                <br>-->
-                <div class="container3">
-                    <div class="input_data">
-                        
-                        <label for="mail" class="email">Email</label>
-                        <input type="email" id="mail">
-
-                    </div>
-                    <div class="input_data">
-                        <label for="contact" class="phone">Phone Number</label>
-                        <input type="text" id="contact">
-                    
-                    </div>
-                </div>
-
-                <div class="container4">
-                    <div class="input_data">
-                    <input type="submit" value="Confirm" id="button">
-                    <input type="submit" value="Add Passanger" id="button">
-                    </div>
-                </div>
-                </form>
-
-            `
-            document.querySelector("#passanger_details").innerHTML = pass_details;
-        }
-
-        passanger_det();
-        let fn=false;
-        let ln=false;
-        let ag=false;
-        let gen=false;
-        let em=false;
-        let ph=false;
-
-
-
-        const first_name=document.getElementById('fname');
-        const last_name=document.getElementById('lname');
-        const age=document.getElementById('Age');
-        const select=document.getElementById('gender');
-        const val = select.options[select.selectedIndex].value;
-        const mail=document.getElementById('mail');
-        const number=document.getElementById('contact');
-
-        const button=document.getElementById('button');
-
-        var name_regex = /^[a-zA-Z]{1,30}$/;
-        var number_regex= /^[0-9]{10}$/;
-        var age_regex= /^0?1[89]|0?[2-9][0-9]$/
-        var mail_regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-
-
-        first_name.addEventListener('input', validate_first_name);
-        last_name.addEventListener('input', validate_last_name);
-        age.addEventListener('input',validate_age);
-        mail.addEventListener('input',validate_mail);
-        number.addEventListener('input',validate_number);
-
-        confirm_button();
-
-        function validate_first_name(){
-            console.log(first_name.value)
-            if(name_regex.test(first_name.value)){
-                validate(first_name);
-                fn=true;
-                confirm_button();
-            }
-            else{
-                error(first_name);
-                fn=false;
-            }
-        }
-
-        function validate_last_name(){
-            console.log(last_name.value)
-            if(name_regex.test(last_name.value)){
-                validate(last_name);
-                ln=true;
-                confirm_button();
-            }
-            else{
-                error(last_name);
-                ln=false;
-            }
-        }
-
-        function validate_age(){
-            console.log(age.value)
-            if(age_regex.test(age.value)){
-                validate(age);
-                ag=true;
-                confirm_button();
-            }
-            else{
-                error(age);
-                ag=false;
-            }
-        }
-
-
-        function validate_mail(){
-            console.log(mail.value)
-            if(mail_regex.test(mail.value)){
-                validate(mail);
-                em=true;
-                confirm_button();
-            }
-            else{
-                error(mail);
-                em=false;
-            }
-        }
-
-        function validate_number(){
-            console.log(number.value)
-            if(number_regex.test(number.value)){
-                validate(number);
-                ph=true;
-                confirm_button();
-            }
-            else{
-                error(number);
-                ph=false;
-            }
-}
-
-function validate(val){
-    val.style.borderColor = "green";
-    
-    //console.log(count);
-}
-
-function error(val){
-    val.style.borderColor = "red";
-
-    //console.log(count);
-}
-
-function confirm_button(){
-    if(fn===false && ln===false && ag===false  && em===false && ph===false){
-        
-        //console.log('hai')
-        button.disabled = true;
-        button.style.background=  "#d5dbd9";
-        button.style.color ="rgb(79, 108, 145)";
-    }
-   else if(fn===true && ln===true && ag===true  && em===true && ph===true){
-        store_item();
-        //console.log('hello')
-        button.disabled = false;
-        button.style.background=  "rgb(79, 108, 145)";
-        button.style.color ="#d5dbd9";
-        button.style.ponter="cursor";
-
-    }
-
-}
-
-function store_item(){
-    localStorage.setItem("firstname", first_name.value);
-    localStorage.setItem("lastname", last_name.value);
-}
-
-
+        function add_pass(){
+ document.querySelector(".button2").addEventListener("click",function(){
+    document.querySelector(".add_passanger").style.display="true";
+})
+ }
     </script>
 </body>
 </html>

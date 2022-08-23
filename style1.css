@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Barlow+Semi+Condensed:ital,wght@1,100&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Barlow+Semi+Condensed:ital,wght@1,100&family=Poiret+One&family=Tajawal:wght@300&display=swap');
+
+body{
+    background: #fffefe;
+    margin: 0 0 0 0;
+    font-family: 'Aboreto', cursive;
+font-family: 'Barlow Semi Condensed', sans-serif;
+font-family: 'Poiret One', cursive;
+font-family: 'Tajawal', sans-serif;
+}
+
+.background{
+    padding-top: 0%;
+    /*background:rgb(79, 108, 145);*/
+    background-image: url("images/plane6.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    
+}
+.logo{
+    display: flex;
+}
+.about{
+    margin-left: 40%;
+}
+
+.Aboutus{
+    display: flex; 
+    margin-top: 10px;  
+}
+
+.text{
+    padding-top: 25px;
+}
+
+.logo1{
+    font-size: 30px;
+    color: #f2f2f2;
+    margin-left: 7%;
+    font-family: 'Aboreto', cursive;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Poiret One', cursive;
+    }
+
+.logo2{
+        font-size: 30px;
+        color: #f2f2f2;
+        text-transform: uppercase;
+        font-family: 'Aboreto', 'cursive';
+    }
+
+
+.logo11{
+    font-size: 30px;
+    color: #000;
+    margin-left: 7%;
+    font-family: 'Aboreto', cursive;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Poiret One', cursive;
+    }
+
+.logo21{
+        font-size: 30px;
+        color: #000;
+        text-transform: uppercase;
+        font-family: 'Aboreto', 'cursive';
+    }
+
+.logo_img{
+
+    left: 5px;
+}
+
+#nav_items{
+
+    position: fixed;
+    list-style:none;
+    word-spacing: 10px;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    word-spacing: 10px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    text-transform: uppercase;
+    color: rgb(255, 102, 0);
+}
+
+
+#nav_items li{
+    display: inline;
+    font-size: larger;
+    margin-right: 7%;
+    padding-top: 5%;
+}
+
+#nav_items li a:hover{
+    color: rgb(255, 102, 0);
+}
+
+#nav_items li a{
+        color: #f2f2f2;
+        text-decoration: None;
+        letter-spacing: 2px;
+        font-weight: bold;
+        
+}
+
+.heading{
+    font-size: 70px;
+    color: #000000;
+    font-weight:500;
+    font-family: 'Aboreto', cursive;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Poiret One', cursive;
+    padding-top: 10%;
+    }
+.heading2{
+    font-size: 70px;
+    font-weight: bolder;
+    color: #000000;
+    text-transform: uppercase;
+    font-family: 'Aboreto', 'cursive';
+}
+
+.tagline{
+    font-size: 25px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.book_button{
+    text-decoration: none;
+    font-size: large;
+    background: rgb(255, 102, 0);
+    padding: 10px 15px;
+    color: #fff;
+    font-weight: bolder;
+    border-radius: 5px;
+    box-shadow: 6px;
+    transition: 0.3s;
+    position: absolute;
+    top: 60%;
+    left: 47%;
+}
+
+.book_button:hover{
+    color: rgb(255, 102, 0);
+    background: #fff;
+
+}
+header{
+
+    background-color: #292929;
+    padding-top: 0%;
+}
+.book_flights{
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.popup_cards{
+
+    height: 500px;
+    width: 1200px;
+    background: whitesmoke;
+    border-radius: 5px;
+    
+}
+
+.close{
+    width: 2%;
+    position: absolute;
+    right: 19%;
+    top: 25%;
+    
+    cursor: pointer;
+    border-radius: 50%;
+    background: none;
+    -webkit-filter: grayscale(1) invert(1);
+    filter: grayscale(0.5) invert(0.5);
+}
+
+.close:hover{
+    -webkit-filter: grayscale(1) invert(1);
+    filter: grayscale(0.6) invert(0.7);
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.Aboutus h1{
+    font-size: 70px;
+    text-align: center;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+
+.Aboutus p{
+    font-weight: 600;
+    text-align: center;
+}
+
+#vision h1{
+    font-size: 70px;
+    text-align: center;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+#vision p{
+    font-weight: 600;
+    text-align: center;
+}
+
+#values h1{
+    font-size: 70px;
+    text-align: center;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+#values p{
+    font-weight: 600;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}
+
+
+
+.card:hover{
+transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12);
+
+}
+
+#vision{
+    display: flex;
+    margin-top: 10px;
+}
+
+#values{
+    margin-top: 10px;
+    display: flex;
+}
+
+.why_choose_us{
+    display:flex;
+    flex-direction: row;
+    margin-left: 15%;
+}
+
+.flights_per_day{
+    padding-right: 10%;
+
+}
+
+.card-body h6 ,p{
+    font-weight: 700;
+    text-align: center;
+}
+
+.card-body button{
+    background: rgb(255, 102, 0);
+    border: rgb(255, 102, 0);
+    color: #fff;   
+    border-radius: 5px;
+    box-shadow: 6px;
+}
+
+.card-body button:hover{
+    background: rgb(206, 82, 0);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 6px;
+}
+
+nav{
+    position: sticky;
+    top: 0px;
+}

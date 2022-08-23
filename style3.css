@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Barlow+Semi+Condensed:ital,wght@1,100&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Barlow+Semi+Condensed:ital,wght@1,100&family=Poiret+One&family=Tajawal:wght@300&display=swap');
+
+body{
+    font-family: 'Aboreto', cursive;
+font-family: 'Barlow Semi Condensed', sans-serif;
+font-family: 'Poiret One', cursive;
+font-family: 'Tajawal', sans-serif;
+background: whitesmoke;
+background-image: url("images/plane5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heading{
+    text-align: center;
+    font-size: xx-large;
+}
+.ticket{
+    width: 50%;
+    background-color: #fff;
+    height: 50vh;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    display: block;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.details{
+    display: flex;
+    justify-content: space-around;
+}

@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Let's Go</title>
     <link rel="icon" type="image/png" href="/images/favicon.png">
-   <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
-<body>
 
+<body>
     <section class="flight-form">
         <div class="head">
         <h2>Flight Reservation</h2>
@@ -34,12 +34,14 @@
                         <input type="text" id="Age">
                     </div>
 
-                    <div class="input_data">
+                    <div class="input_data1" id="gend">
                     <label class="gender">Gender</label>
-                    <select id="gender">
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                    </select>
+                    <div id="gender">
+                        <input type="radio" name="gender1" value="male" id="male" class="gen1" style="margin-left: 150px;">
+                        <label for="male" >Male</label><br>
+                        <input type="radio" name="gender1" value="female" id="female"class="gen1" style="margin-left: 150px;">
+                        <label for="female" >Female</label>
+                    </div>
 
                     </div>
 
@@ -61,7 +63,7 @@
                         <input type="submit" value="Confirm" id="button">
                     </div>
                     <div class="input_data">
-                        <input type="button" value="Add Passenger" class="button1" onclick="add_pass()">
+                        <input type="button" value="Add Passenger" class="button1" id="button_add_pass" onclick="add_pass()">
                     </div>
                 </form>
             </div>
@@ -72,30 +74,32 @@
             <form id="form2" action="page3.html" class="passanger_detains2" >
                 <div class="input_data">
                 <label for="fname2" class="firstname">First Name</label>
-                <input type="text" id="fname2">
+                <input type="text" id="fname2" class="inputs">
                 </div>
 
                 <div class="input_data">
                     <label for="lname2" class="lastname">Last Name</label>
-                    <input type="text"  id="lname2">
+                    <input type="text"  id="lname2" class="inputs">
                 </div>
 
                 <div class="input_data">
                     <label for="Age2" class="age">Age</label>
-                    <input type="text" id="Age2">
+                    <input type="text" id="Age2" class="inputs">
+                </div>
+
+                <div class="input_data1" id="gend1">
+                    <label class="gender">Gender</label>
+                    <div id="gender">
+                        <input type="radio" name="gender2" value="male" id="male1" class="gen1" style="margin-left: 150px;">
+                        <label for="male1" >Male</label><br>
+                        <input type="radio" name="gender2" value="female" id="female1"class="gen1" style="margin-left: 150px;">
+                        <label for="female1" >Female</label>
+                    </div>
+
                 </div>
 
                 <div class="input_data">
-                <label class="gender2">Gender</label>
-                <select id="gender2">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                </select>
-
-                </div>
-
-                <div class="input_data">
-                <input type="submit" value="Confirm" class="button1" onclick="store_item2()">
+                <input type="submit" value="Confirm" class="button1" onclick="store_item2()" class="inputs">
                 </div>
             </form>
         </div>

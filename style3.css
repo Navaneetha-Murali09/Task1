@@ -19,9 +19,11 @@ background-image: url("images/plane5.jpg");
     font-size: xx-large;
 }
 .ticket{
+    padding-top: 2%;
+    align-items: center;
     width: 50%;
     background-color: #fff;
-    height: 50vh;
+    height: 60vh;
     border-radius: 20px;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
     display: block;
@@ -30,6 +32,52 @@ background-image: url("images/plane5.jpg");
 }
 
 .details{
+
     display: flex;
     justify-content: space-around;
+}
+
+.toandfro{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 0%;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.time{
+    display: flex;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.time h3{
+    padding-left: 3%;
+}
+
+.passanger1_details{
+    /*margin-left: -20%;*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_details{
+    display: flex;
+    width: 100%;
+    
+    justify-content: space-between;
+}
+.home_link{
+    background-color:  rgb(255, 102, 0);
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+    margin: 3%;
+
+}
+
+.home_link:hover{
+ background-color: rgb(201, 80, 0);
 }

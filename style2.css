@@ -76,20 +76,11 @@ label{
     display: inline;
 }
 
-.gender{
-    width: 425px; 
+#gend{
+   display: flex;
 }
 
-select{
-    margin-right: 205px;
-    margin-left: 100px;
-    height:3.5vh;
-    appearance: none;
-    border: 1px solid #d5dbd9;
-    width: 200px;
-    text-align: center;
-    border-radius: 3px;
-}
+
 
 .button1{
     color: #d5dbd9;
@@ -105,7 +96,7 @@ select{
 #add_passanger{
     max-width: 500px;
     width: 100%;
-    height: 35vh;
+    height: 40vh;
     background: #fff;
     margin: 20px auto;
     padding: 30px;
@@ -117,3 +108,13 @@ select{
     padding-bottom: 5%;
 }
 
+#form2{
+    height: 10vh;
+}
+
+.input_data1{
+    display: inline;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}

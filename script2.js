@@ -9,12 +9,12 @@ let ph=false;
 let first_name=document.getElementById('fname');
 let last_name=document.getElementById('lname');
 let age=document.getElementById('Age');
-let select=document.getElementById('gender');
-let val = select.options[select.selectedIndex].value;
+var radios = document.getElementsByName('gender');
 let mail=document.getElementById('mail');
 let number=document.getElementById('contact');
 
 const button=document.getElementById('button');
+const button2=document.getElementById('button_add_pass')
 
 var name_regex = /^[a-zA-Z]{1,30}$/;
 var number_regex= /^[0-9]{10}$/;
@@ -114,15 +114,22 @@ function confirm_button(){
             if(fn===false && ln===false && ag===false  && em===false && ph===false){
 
                 button.disabled = true;
+                button2.disabled=true;
                 button.style.background=  "#d5dbd9";
                 button.style.color ="rgb(255, 102, 0)";
+                button2.style.background=  "#d5dbd9";
+                button2.style.color ="rgb(255, 102, 0)";
             }
         else if(fn===true && ln===true && ag===true  && em===true && ph===true){
                 store_item1();
                 button.disabled = false;
+                button2.disabled=false;
                 button.style.background=  "rgb(255, 102, 0)";
                 button.style.color ="#d5dbd9";
                 button.style.ponter="cursor";
+                button2.style.background=  "rgb(255, 102, 0)";
+                button2.style.color ="#d5dbd9";
+                button2.style.ponter="cursor";
             }
 }
 
@@ -130,7 +137,8 @@ function store_item1(){
             localStorage.setItem("firstname1", first_name.value);
             localStorage.setItem("lastname1", last_name.value);
             localStorage.setItem("age1", age.value);
-            localStorage.setItem("gender1", val);
+            var gender = document.querySelector('input[name=gender1]:checked');
+            localStorage.setItem("gender1", gender.value);
             localStorage.setItem("email1", mail.value);
             localStorage.setItem("contact1", number.value);
             localStorage.setItem("flag",0);
@@ -140,8 +148,7 @@ function store_item1(){
 let first_name2=document.getElementById('fname2');
 let last_name2=document.getElementById('lname2');
 let age2=document.getElementById('Age2');
-select=document.getElementById('gender2');
-let val2 = select.options[select.selectedIndex].value;
+var radios = document.getElementsByName('gender');
 
 function add_pass()
 {
@@ -149,14 +156,23 @@ function add_pass()
     pass.style="display:true";
     console.log(first_name2.value,last_name2.value, age2.value,val2);
 }
+document.getElementById("button_add_pass").addEventListener("click",function(){
+        button2.style.background=  "#d5dbd9";
+        button2.style.color ="rgb(255, 102, 0)";
+        button.style.background=  "#d5dbd9";
+        button.style.color ="rgb(255, 102, 0)";
+        button.disabled = true;
+        button2.disabled=true;
+    })
 function store_item2()
 {
-    
+localStorage.setItem("flag",1);
     localStorage.setItem("firstname2", first_name2.value);
     localStorage.setItem("lastname2", last_name2.value);
     localStorage.setItem("age2", age2.value);
-    localStorage.setItem("gender2", val2);
-    localStorage.setItem("flag",1);
+    var gender = document.querySelector('input[name=gender2]:checked');
+    localStorage.setItem("gender2", gender.value);
+    
 }
 function submit_button_pressed()
 {

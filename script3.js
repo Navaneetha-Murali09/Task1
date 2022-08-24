@@ -37,30 +37,51 @@ function display_value2(data){
     departure=new Date(data[flight_id].departTime);
     arrival=new Date(data[flight_id].ArrivalTime);
     content += 
-    `
+    
+    `   <center>
+        
+        <h1>${data[flight_id].flightNum}</h1>
+        <div class=toandfro>
+                <h3>${data[flight_id].origin}  </h3>
+                <img src="images/logo-ticket.png" width=13%>
+                <h3>  ${data[flight_id].destination}</h3>
+        </div>
+        <div class="time">
+            <h3>${departure.toUTCString()}</h3>
+            <h3>${arrival.toUTCString()}</h3>
+        </div>
+        <h2>Passenger Details</h2>
+        </center>
+        
         <div class="details" >
+        
             <div class="flight_details">
-            <h1>Ticket Details</h1>
-                <h3>${data[flight_id].flightNum}</h3>
-                <h3>From: ${data[flight_id].origin}</h3>
-                <h3>To: ${data[flight_id].destination}</h3> 
-                <h3>Departure:<span>${departure.toUTCString()}</span></h3>
-                <h3>Arrival:<span>${arrival.toUTCString()}</span></h3>
-                <h3>Fare:<span>&#8377;${data[flight_id].price}</span></h3>
-            </div>
+                <!--
+                <h3 class="contact">Contact No: ${contact}</h3>
+                <h3 class="email">Email: ${email}</h3>
+                <h3>Fare:<span>&#8377;${data[flight_id].price*2}</span></h3>-->
+            
+            <center>
             <div class= "passanger1_details">
-            <h1>Passanger1 Details</h1>
+            
                 <h3 class="pname">Name: ${name1}</h3>
                 <h3 class="age">Age: ${age}</h3>
                 <h3 class="gender">Gender: ${gender}</h3>
-                <h3 class="contact">Contact No: ${contact}</h3>
-                <h3 class="email">Email: ${email}</h3>
+                
             </div>
-            <div class= "passanger2_details">
-            <h1>Passanger Details</h1>
+            <div class= "passanger1_details">
+
                 <h3 class="pname">Name: ${name2}</h3>
                 <h3 class="age">Age: ${age2}</h3>
                 <h3 class="gender">Gender: ${gender2}</h3>
+            </div>
+            <div class="contact_details">
+            <h3 class="contact" style="margin-right:20px;">Contact No: ${contact}</h3>
+            <h3 class="email">Email: ${email}</h3>
+            </div>
+            <h3>Total Fare: <span>&#8377;${data[flight_id].price*2}</span></h3>
+            <a href="page1.html" class="home_link" style="margin-top:2% ;">Home</a>
+            </center>
             </div>
 
     `
@@ -72,25 +93,45 @@ function display_value(data)
     departure=new Date(data[flight_id].departTime);
     arrival=new Date(data[flight_id].ArrivalTime);
  content += 
-    `
-        <div class="details" >
-            <div class="flight_details">
-            <h1>Ticket Details</h1>
-                <h3>${data[flight_id].flightNum}</h3>
-                <h3>From: ${data[flight_id].origin}</h3>
-                <h3>To: ${data[flight_id].destination}</h3> 
-                <h3>Departure:<span>${departure.toUTCString()}</span></h3>
-                <h3>Arrival:<span>${arrival.toUTCString()}</span></h3>
-                <h3>Fare:<span>&#8377;${data[flight_id].price}</span></h3>
-            </div>
-            <div class= "passanger_details">
-            <h1>Passanger Details</h1>
-                <h3 class="pname">Name: ${name1}</h3>
-                <h3 class="age">Age: ${age}</h3>
-                <h3 class="gender">Gender: ${gender}</h3>
-                <h3 class="contact">Contact No: ${contact}</h3>
-                <h3 class="email">Email: ${email}</h3>
-            </div>
+    `<center>
+    <h1>${data[flight_id].flightNum}</h1>
+    <div class=toandfro>
+            <h3>${data[flight_id].origin}  </h3>
+            <img src="images/logo-ticket.png" width=13%>
+            <h3>  ${data[flight_id].destination}</h3>
+    </div>
+    <div class="time">
+        <h3>${departure.toUTCString()}</h3>
+        <h3>${arrival.toUTCString()}</h3>
+    </div>
+    <h2>Passenger Details</h2>
+    </center>
+    
+    <div class="details" >
+    
+        <div class="flight_details">
+            <!--
+            <h3 class="contact">Contact No: ${contact}</h3>
+            <h3 class="email">Email: ${email}</h3>
+            <h3>Fare:<span>&#8377;${data[flight_id].price*2}</span></h3>-->
+        
+        <center>
+        <div class= "passanger1_details">
+        
+            <h3 class="pname">Name: ${name1}</h3>
+            <h3 class="age">Age: ${age}</h3>
+            <h3 class="gender">Gender: ${gender}</h3>
+            
+        </div>
+        <div class="contact_details">
+        <h3 class="contact" style="margin-right:20px;">Contact No: ${contact}</h3>
+        <h3 class="email">Email: ${email}</h3>
+        </div>
+        <h3>Total Fare: <span>&#8377;${data[flight_id].price*2}</span></h3>
+        <a href="page1.html" class="home_link" style="margin-top:2% ;">Home</a>
+        </center>
+        </div>
+
 
     `
 

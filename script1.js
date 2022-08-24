@@ -1,3 +1,4 @@
+//popup card
 document.getElementById("book_button_id").addEventListener("click",function(){
     document.querySelector(".book_flights").style.display="flex";
  })
@@ -5,7 +6,7 @@ document.getElementById("book_button_id").addEventListener("click",function(){
     document.querySelector(".book_flights").style.display="none";
 })
 
-// call from json
+// call from json and display athe flight details dynamically
 
 function display_cards(flight_det){
     const number_of_flights = Object.keys(flight_det).length; //number of flights in the json
@@ -48,27 +49,8 @@ fetch('flights.json')
 .then(response => response.json())
 .then(data => display_cards(data));
 
+//store flight details in th local storage
 function get_flight_details(flightid){
-    //console.log('here')
-    //console.log(flightid);
     localStorage.setItem("flightid", flightid);
     
 }
-
-/*<div class="card-body">
-                <h6>Flight Number: ${flight_det[count]['flightNum']}</h6>
-                <p class="Flight-number">${flight_det[count]['flightNum']}</p>
-                <h6>From</h6>
-                <p class="From">${flight_det[count]['origin']}</p>
-                <h6>To</h6>
-                <p class="To">${flight_det[count]['destination']}</p>
-                <h6>Departure Time</h6>
-                <p class="departure-time">${departure.toUTCString()}</p>
-                <h6>Arrival Time</h6>
-                <p class="arrival-time">${arrival.toUTCString()}</p>
-                <h6>Fare</h6>
-                <p class="price">&#8377;${flight_det[count]['price']}</p>
-                <center>
-                <button type="button" class="btn btn-primary" id="flight${flight_det[count]['id']}" onclick="location.href='page2.html'; get_flight_details(${flight_det[count]['id']});">Proceed</button>
-                </center>
-                </div> */

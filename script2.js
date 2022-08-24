@@ -5,6 +5,7 @@ let gen=false;
 let em=false;
 let ph=false;
 
+//get details of first passanger using its id
 
 let first_name=document.getElementById('fname');
 let last_name=document.getElementById('lname');
@@ -28,6 +29,8 @@ mail.addEventListener('input',validate_mail);
 number.addEventListener('input',validate_number);
 
 confirm_button();
+
+//functions for validation
 
 function validate_first_name(){
     console.log(first_name.value)
@@ -110,6 +113,8 @@ function validate(val){
             //console.log(count);
 }
 
+
+//function when holds the condition true enables the button and stores it onto the local storage by calling function store_item1()
 function confirm_button(){
             if(fn===false && ln===false && ag===false  && em===false && ph===false){
 
@@ -133,6 +138,7 @@ function confirm_button(){
             }
 }
 
+//function that stores the input value to the loal host
 function store_item1(){
             localStorage.setItem("firstname1", first_name.value);
             localStorage.setItem("lastname1", last_name.value);
@@ -145,10 +151,16 @@ function store_item1(){
 }
 
 
+//For add passanger
+
+//get the passenger details
+
 let first_name2=document.getElementById('fname2');
 let last_name2=document.getElementById('lname2');
 let age2=document.getElementById('Age2');
 var radios = document.getElementsByName('gender');
+
+//the function gets invoked on clicking the add passenger button
 
 function add_pass()
 {
@@ -156,6 +168,8 @@ function add_pass()
     pass.style="display:true";
     console.log(first_name2.value,last_name2.value, age2.value,val2);
 }
+
+//the add passanger button gets disabled here when the new pasanger details are being added
 document.getElementById("button_add_pass").addEventListener("click",function(){
         button2.style.background=  "#d5dbd9";
         button2.style.color ="rgb(255, 102, 0)";
@@ -164,6 +178,9 @@ document.getElementById("button_add_pass").addEventListener("click",function(){
         button.disabled = true;
         button2.disabled=true;
     })
+
+
+//function that stores the input value of the new passwnger to the loal host
 function store_item2()
 {
 localStorage.setItem("flag",1);
@@ -174,6 +191,7 @@ localStorage.setItem("flag",1);
     localStorage.setItem("gender2", gender.value);
     
 }
+//this function is invoked when the confirm button on the added passenger is pressed
 function submit_button_pressed()
 {
     window.location.href="page3.html";

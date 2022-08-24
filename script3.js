@@ -1,3 +1,4 @@
+//getting all the items from local storage
 let flight_id=localStorage.getItem("flightid");
 let first_name=localStorage.getItem("firstname1");
 let last_name=localStorage.getItem("lastname1");
@@ -10,6 +11,7 @@ let flag=localStorage.getItem("flag");
 let first_name2='',last_name2='',gender2='',age2='';
 let name2='';
 let content='';
+//flag item when 0 it calls the function to display the value of one passenger and when flag is 1 it calls the function to display the value of both passenger
 
 flight_id-=1;
 const name1=first_name+' '+last_name;
@@ -33,6 +35,7 @@ else{
 
 }
 
+//function to display the value of both passenger
 function display_value2(data){
     departure=new Date(data[flight_id].departTime);
     arrival=new Date(data[flight_id].ArrivalTime);
@@ -88,6 +91,7 @@ function display_value2(data){
     document.querySelector("#flight_details").innerHTML = content;
 }
 
+// function to display the value of one passenger
 function display_value(data)
 {   
     departure=new Date(data[flight_id].departTime);

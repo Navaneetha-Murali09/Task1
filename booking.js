@@ -20,7 +20,7 @@ const button2=document.getElementById('button_add_pass')
 var name_regex = /^[a-zA-Z]{1,30}$/;
 var number_regex= /^[0-9]{10}$/;
 var age_regex= /^0?1[89]|0?[2-9][0-9]$/
-var mail_regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+var mail_regex = /[a-z0-9]+@[a-z]+\.com/;
 
 first_name.addEventListener('input', validate_first_name);
 last_name.addEventListener('input', validate_last_name);
@@ -42,6 +42,7 @@ function validate_first_name(){
     else{
             error(first_name);
             fn=false;
+            confirm_button();
 }
 }
 
@@ -56,6 +57,7 @@ function validate_last_name()
         else{
                 error(last_name);
                 ln=false;
+                confirm_button();
         }
 }
 
@@ -70,6 +72,7 @@ function validate_age()
         else{
                 error(age);
                 ag=false;
+                confirm_button();
         }
 }
 
@@ -85,6 +88,7 @@ function validate_mail()
         else{
                 error(mail);
                 em=false;
+                confirm_button();
         }
 }
 
@@ -98,6 +102,7 @@ function validate_number(){
             else{
                 error(number);
                 ph=false;
+                confirm_button();
             }
 }
 
@@ -194,6 +199,6 @@ localStorage.setItem("flag",1);
 //this function is invoked when the confirm button on the added passenger is pressed
 function submit_button_pressed()
 {
-    window.location.href="page3.html";
+    window.location.href="confirmation.html";
 }
     

@@ -162,45 +162,9 @@ header{
     background-color: #292929;
     padding-top: 0%;
 }
-.book_flights{
-    background: rgba(0, 0, 0, 0.6);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
 
 
 
-.popup_cards{
-
-    height: 500px;
-    width: 1200px;
-    background: whitesmoke;
-    border-radius: 5px;
-    
-}
-
-.close{
-    width: 2%;
-    position: absolute;
-    right: 19%;
-    top: 25%;
-    
-    cursor: pointer;
-    border-radius: 50%;
-    background: none;
-    -webkit-filter: grayscale(1) invert(1);
-    filter: grayscale(0.5) invert(0.5);
-}
-
-.close:hover{
-    -webkit-filter: grayscale(1) invert(1);
-    filter: grayscale(0.6) invert(0.7);
-}
 
 .information{
     display: flex;

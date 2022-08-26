@@ -1,10 +1,4 @@
-//popup card
-document.getElementById("book_button_id").addEventListener("click",function(){
-    document.querySelector(".book_flights").style.display="flex";
- })
- document.querySelector(".close").addEventListener("click",function(){
-    document.querySelector(".book_flights").style.display="none";
-})
+
 
 // call from json and display athe flight details dynamically
 
@@ -34,7 +28,7 @@ function display_cards(flight_det){
                 <p class="arrival-time">${arrival.toUTCString()}</p>
                 <h6>Fare: &#8377;${flight_det[count]['price']}</h6>
                 <center>
-                <button type="button" class="btn btn-primary" id="flight${flight_det[count]['id']}" onclick="location.href='page2.html'; get_flight_details(${flight_det[count]['id']});">Proceed</button>
+                <button type="button" class="btn btn-primary" id="flight${flight_det[count]['id']}" onclick="location.href='booking.html'; get_flight_details(${flight_det[count]['id']});">Proceed</button>
                 </center>
                 </div>
         </div>

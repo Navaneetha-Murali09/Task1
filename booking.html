@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Let's Go</title>
     <link rel="icon" type="image/png" href="/images/favicon.png">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="booking.css">
 </head>
 
 <body>
@@ -19,20 +19,20 @@
         <div id="input_details">
             <div class=form_display>
                 <!--Form to add first passenger details-->
-                <form id="form" action="page3.html" class="passanger_detains">
+                <form id="form" action="confirmation.html" class="passanger_detains">
                     <div class="input_data">
                     <label for="fname" class="firstname">First Name</label>
-                    <input type="text" id="fname">
+                    <input type="text" id="fname" required> 
                     </div>
 
                     <div class="input_data">
                         <label for="lname" class="lastname">Last Name</label>
-                        <input type="text"  id="lname">
+                        <input type="text"  id="lname" required>
                     </div>
 
                     <div class="input_data">
                         <label for="Age" class="age">Age</label>
-                        <input type="text" id="Age">
+                        <input type="text" id="Age" required>
                     </div>
 
                     <div class="input_data1" id="gend">
@@ -49,12 +49,12 @@
                     <div class="input_data">
                         
                         <label for="mail" class="email">Email</label>
-                        <input type="email" id="mail">
+                        <input type="email" id="mail" required>
 
                     </div>
                     <div class="input_data">
                         <label for="contact" class="phone">Phone Number</label>
-                        <input type="text" id="contact">
+                        <input type="text" id="contact" required>
                     
                     </div>
 
@@ -73,7 +73,7 @@
         <div id="add_passanger" style="display: none; margin-bottom: 10%;">
             <h4 style="text-align: center; font-size:25px;">Passanger details</h4>
             <!--Form to add second passenger details-->
-            <form id="form2" action="page3.html" class="passanger_detains2" >
+            <form id="form2" action="confirmation.html" class="passanger_detains2" >
                 <div class="input_data">
                 <label for="fname2" class="firstname">First Name</label>
                 <input type="text" id="fname2" class="inputs">
@@ -107,6 +107,6 @@
         </div>
     </section>
 
-    <script src="script2.js"></script>
+    <script src="booking.js"></script>
 </body>
 </html>

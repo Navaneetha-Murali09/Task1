@@ -83,7 +83,7 @@ function display_value2(data){
             <h3 class="email">Email: ${email}</h3>
             </div>
             <h3>Total Fare: <span>&#8377;${data[flight_id].price*2}</span></h3>
-            <a href="page1.html" class="home_link" style="margin-top:2% ;">Home</a>
+            <a href="homepage.html" class="home_link" style="margin-top:2% ;">Home</a>
             </center>
             </div>
 
@@ -132,7 +132,7 @@ function display_value(data)
         <h3 class="email">Email: ${email}</h3>
         </div>
         <h3>Total Fare: <span>&#8377;${data[flight_id].price}</span></h3>
-        <a href="page1.html" class="home_link" style="margin-top:2% ;">Home</a>
+        <a href="homepage.html" class="home_link" style="margin-top:2% ;">Home</a>
         </center>
         </div>
 
